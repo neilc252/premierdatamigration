@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premier Data Migration - Seamless Cloud & Database Solutions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-bg {
+            background-color: #111827;
+            background-image:
+                radial-gradient(at 10% 20%, rgb(45, 50, 78) 0%, rgb(18, 22, 45) 100%),
+                radial-gradient(at 90% 80%, rgb(25, 29, 58) 0%, rgb(18, 22, 45) 100%);
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-200">
+
+    <!-- Header & Navigation -->
+    <header class="bg-gray-800 bg-opacity-70 backdrop-blur-md sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#">
+                <!-- NOTE: The previous Base64 logo was incomplete. Please upload your logo to GitHub and replace this placeholder URL with the actual link to your logo. -->
+                <img src="https://placehold.co/240x48/000000/FFFFFF?text=Premier+Data+Migration" 
+                     alt="Premier Data Migration Logo" class="h-8 md:h-12 w-auto">
+            </a>
+            <nav class="hidden md:flex space-x-6 text-lg">
+                <a href="#about" class="hover:text-blue-400 transition-colors duration-300">About Us</a>
+                <a href="#services" class="hover:text-blue-400 transition-colors duration-300">Services</a>
+                <a href="#industries" class="hover:text-blue-400 transition-colors duration-300">Industries</a>
+                <a href="#contact" class="hover:text-blue-400 transition-colors duration-300">Contact</a>
+            </nav>
+            <button id="mobile-menu-button" class="md:hidden text-gray-200 focus:outline-none">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-800 bg-opacity-90 backdrop-blur-md">
+            <a href="#about" class="block py-4 px-6 text-lg hover:bg-gray-700 transition-colors duration-300">About Us</a>
+            <a href="#services" class="block py-4 px-6 text-lg hover:bg-gray-700 transition-colors duration-300">Services</a>
+            <a href="#industries" class="block py-4 px-6 text-lg hover:bg-gray-700 transition-colors duration-300">Industries</a>
+            <a href="#contact" class="block py-4 px-6 text-lg hover:bg-gray-700 transition-colors duration-300">Contact</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-bg text-center py-24 md:py-36 min-h-screen flex items-center justify-center">
+        <div class="container mx-auto px-6">
+            <h1 class="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-4">
+                Seamless <span class="text-blue-400">Data Migration</span> and <span class="text-blue-400">Automation</span> Solutions
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto mb-8">
+                Migrate your data with confidence and automate your operations with cutting-edge technology.
+            </p>
+            <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transition-transform duration-300 hover:scale-105 inline-block">
+                Get a Free Consultation
+            </a>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-20 bg-gray-950">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center text-blue-400 mb-12">About Us</h2>
+            <div class="space-y-12 max-w-4xl mx-auto">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4 text-white">Who We Are</h3>
+                    <p class="text-gray-300 leading-relaxed">
+                        Premier Data Migration is a specialized data solutions company helping businesses modernize, migrate, and manage their data. With over 25 years of experience across industries like oil & gas, healthcare, and banking, we deliver expert data migrations and automation using tools like Ansible Automation Platform or AWX. We’re a team driven by values of Integrity, Excellence, Customer Focus, Security, and Innovation—committed to making data more accessible, secure, and efficient.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4 text-white">Our Mission</h3>
+                    <p class="text-gray-300 leading-relaxed">
+                        At Premier Data Migration, our mission is to transform the way organizations manage and move their data. We specialize in migrating data from all formats, including legacy storage systems such as tapes and hard drives, to secure, modern cloud or on-premises environments. Through cutting-edge automation and a relentless focus on efficiency, we help clients unlock the full potential of their data infrastructure.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4 text-white">Our Vision</h3>
+                    <p class="text-gray-300 leading-relaxed">
+                        Our vision is to lead the future of data migration and automation by making data more accessible, secure, and manageable. We aim to become the trusted partner for organizations seeking seamless, future-ready storage and automation solutions—driving innovation and operational excellence across every industry.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4 text-white">Our Core Values</h3>
+                    <ul class="space-y-4 text-gray-300">
+                        <li><span class="font-bold text-blue-400">Integrity:</span> We operate with transparency, trust, and accountability in every engagement.</li>
+                        <li><span class="font-bold text-blue-400">Excellence:</span> We uphold the highest standards through rigorous validation and flawless execution.</li>
+                        <li><span class="font-bold text-blue-400">Customer Focus:</span> We deliver tailored solutions that empower organizations to achieve their goals with confidence.</li>
+                        <li><span class="font-bold text-blue-400">Security:</span> We safeguard sensitive data with advanced protection protocols and best practices.</li>
+                        <li><span class="font-bold text-blue-400">Innovation:</span> We leverage cutting-edge technology to modernize data systems and drive continuous improvement.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center text-blue-400 mb-12">Our Services</h2>
+            <p class="text-lg text-gray-300 text-center max-w-3xl mx-auto mb-12">
+                At Premier Data Migration, we specialize in helping businesses modernize their data, automate their IT operations, and streamline their cloud strategy. With decades of expertise in both legacy and modern systems, we deliver solutions that reduce complexity, improve efficiency, and unlock the full value of your data.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10">
+                <!-- Data Migration & Modernization Card -->
+                <div class="bg-gray-800 p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-shadow duration-300">
+                    <h3 class="text-2xl font-semibold text-white mb-4">1. Data Migration & Modernization</h3>
+                    <ul class="space-y-4 text-gray-300">
+                        <li><span class="font-semibold text-blue-400">Legacy Data Migration:</span> Move data from tape archives, UNIX systems, and on-prem storage arrays into secure, scalable cloud storage (AWS, Azure, Google Cloud).</li>
+                        <li><span class="font-semibold text-blue-400">ERP Data Migration & Integration:</span> Build automated pipelines that not only migrate existing ERP data but also continuously integrate new data sources.</li>
+                        <li><span class="font-semibold text-blue-400">Cloud-Native Data Ingestion:</span> Design and deploy custom data pipelines to pull information from APIs, web sources, and databases into cloud data lakes and warehouses.</li>
+                        <li><span class="font-semibold text-blue-400">Database Migration:</span> Transition on-prem databases (Oracle, SQL Server, MySQL, etc.) to cloud-managed platforms like AWS RDS, Azure SQL, or Google Cloud SQL.</li>
+                    </ul>
+                </div>
+                <!-- IT Automation & DevOps Card -->
+                <div class="bg-gray-800 p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-shadow duration-300">
+                    <h3 class="text-2xl font-semibold text-white mb-4">2. IT Automation & DevOps</h3>
+                    <ul class="space-y-4 text-gray-300">
+                        <li><span class="font-semibold text-blue-400">Ansible Automation:</span> Our primary focus is leveraging Ansible Automation Platform to standardize deployments, manage configurations, and automate tasks across your entire infrastructure, both on-prem and in the cloud.</li>
+                        <li><span class="font-semibold text-blue-400">CI/CD Pipeline Automation:</span> Accelerate development with fully automated build, test, and deployment workflows.</li>
+                        <li><span class="font-semibold text-blue-400">Storage & Data Protection Automation:</span> Simplify provisioning, backup, and recovery processes across hybrid clouds.</li>
+                        <li><span class="font-semibold text-blue-400">IT Operations Automation:</span> Automate user management, server patching, monitoring, and incident response to reduce manual overhead.</li>
+                    </ul>
+                </div>
+                <!-- Cloud & Systems Consulting Card -->
+                <div class="bg-gray-800 p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-shadow duration-300">
+                    <h3 class="text-2xl font-semibold text-white mb-4">3. Cloud & Systems Consulting</h3>
+                    <ul class="space-y-4 text-gray-300">
+                        <li><span class="font-semibold text-blue-400">Cloud Strategy & Architecture:</span> Design secure, scalable cloud environments (AWS, Azure, GCP, OCI) tailored to your business needs.</li>
+                        <li><span class="font-semibold text-blue-400">Legacy System Assessment:</span> Evaluate UNIX servers and legacy apps, then create clear modernization roadmaps.</li>
+                        <li><span class="font-semibold text-blue-400">Efficiency Audits:</span> Identify opportunities for automation, cost savings, and performance improvements across your IT landscape.</li>
+                    </ul>
+                </div>
+                <!-- Custom Development & Tooling Card -->
+                <div class="bg-gray-800 p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-shadow duration-300">
+                    <h3 class="text-2xl font-semibold text-white mb-4">4. AI & Emerging Tech Integration</h3>
+                    <ul class="space-y-4 text-gray-300">
+                        <li><span class="font-semibold text-blue-400">Web Scraping & Data Extraction:</span> Extract, process, and structure data from public websites and digital sources, delivering it in a clean, usable format for your business needs.</li>
+                        <li><span class="font-semibold text-blue-400">AI/ML Integration:</span> We help you integrate AI and Machine Learning models into your data pipelines and business processes to unlock new insights and drive innovation.</li>
+                        <li><span class="font-semibold text-blue-400">Custom Scripting & API Integration:</span> Solve unique integration and data processing challenges with Python, Bash, Perl, and more.</li>
+                        <li><span class="font-semibold text-blue-400">Data Pipeline Orchestration:</span> Ensure reliable data flow, transformation, and delivery through robust, automated pipelines.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Industries Section -->
+    <section id="industries" class="py-20 bg-gray-950">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center text-blue-400 mb-12">Industries We Serve</h2>
+            <p class="text-lg text-gray-300 text-center max-w-3xl mx-auto mb-12">
+                We work across multiple industries, including **healthcare**, **finance**, **manufacturing**, and more, helping organizations modernize their systems and unlock the value of their data.
+            </p>
+        </div>
+    </section>
+
+    <!-- Key Benefits Section -->
+    <section class="py-20 bg-gray-900">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center text-blue-400 mb-12">Key Benefits</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Benefit Card 1 -->
+                <div class="bg-gray-800 p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-shadow duration-300">
+                    <h3 class="text-2xl font-semibold text-white mb-4">1. Faster Time-to-Value</h3>
+                    <p class="text-gray-300 leading-relaxed">
+                        Automated migrations and deployments streamline projects, helping you achieve results faster and with less complexity.
+                    </p>
+                </div>
+                <!-- Benefit Card 2 -->
+                <div class="bg-gray-800 p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-shadow duration-300">
+                    <h3 class="text-2xl font-semibold text-white mb-4">2. Reduced Costs</h3>
+                    <p class="text-gray-300 leading-relaxed">
+                        Eliminate expensive legacy infrastructure and cut manual IT overhead with automation and cloud optimization.
+                    </p>
+                </div>
+                <!-- Benefit Card 3 -->
+                <div class="bg-gray-800 p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-shadow duration-300">
+                    <h3 class="text-2xl font-semibold text-white mb-4">3. Improved Reliability</h3>
+                    <p class="text-gray-300 leading-relaxed">
+                        Automated pipelines, backups, and monitoring ensure consistent performance and fewer outages.
+                    </p>
+                </div>
+                <!-- Benefit Card 4 -->
+                <div class="bg-gray-800 p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-shadow duration-300">
+                    <h3 class="text-2xl font-semibold text-white mb-4">4. Future-Proof Systems</h3>
+                    <p class="text-gray-300 leading-relaxed">
+                        By modernizing legacy platforms and adopting cloud-native solutions, your business is ready to scale and adapt.
+                    </p>
+                </div>
+                <!-- Benefit Card 5 -->
+                <div class="bg-gray-800 p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-shadow duration-300">
+                    <h3 class="text-2xl font-semibold text-white mb-4">5. Customized Solutions</h3>
+                    <p class="text-gray-300 leading-relaxed">
+                        We don’t just deliver one-size-fits-all services — we build tailored integrations, pipelines, and automation designed for your unique needs.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="py-20 bg-gray-950">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center text-blue-400 mb-12">Contact Us</h2>
+            <div class="max-w-xl mx-auto bg-gray-800 p-8 rounded-2xl shadow-xl">
+                <form id="contact-form" class="space-y-6">
+                    <div>
+                        <label for="name" class="block text-gray-300 font-semibold mb-2">Your Name</label>
+                        <input type="text" id="name" name="name" required class="w-full p-3 rounded-lg bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-blue-600">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-gray-300 font-semibold mb-2">Your Email</label>
+                        <input type="email" id="email" name="email" required class="w-full p-3 rounded-lg bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-blue-600">
+                    </div>
+                    <div>
+                        <label for="company" class="block text-gray-300 font-semibold mb-2">Company Name</label>
+                        <input type="text" id="company" name="company" class="w-full p-3 rounded-lg bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-blue-600">
+                    </div>
+                    <div>
+                        <label for="service" class="block text-gray-300 font-semibold mb-2">Select a Service</label>
+                        <select id="service" name="service" required class="w-full p-3 rounded-lg bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-blue-600">
+                            <option value="">-- Choose a Service --</option>
+                            <optgroup label="Data Migration & Modernization">
+                                <option value="Legacy Data Migration">Legacy Data Migration</option>
+                                <option value="ERP Data Migration & Integration">ERP Data Migration & Integration</option>
+                                <option value="Cloud-Native Data Ingestion">Cloud-Native Data Ingestion</option>
+                                <option value="Database Migration">Database Migration</option>
+                            </optgroup>
+                            <optgroup label="IT Automation & DevOps">
+                                <option value="Ansible Automation">Ansible Automation</option>
+                                <option value="CI/CD Pipeline Automation">CI/CD Pipeline Automation</option>
+                                <option value="Storage & Data Protection Automation">Storage & Data Protection Automation</option>
+                                <option value="IT Operations Automation">IT Operations Automation</option>
+                            </optgroup>
+                            <optgroup label="Cloud & Systems Consulting">
+                                <option value="Cloud Strategy & Architecture">Cloud Strategy & Architecture</option>
+                                <option value="Legacy System Assessment">Legacy System Assessment</option>
+                                <option value="Efficiency Audits">Efficiency Audits</option>
+                            </optgroup>
+                            <optgroup label="AI & Emerging Tech Integration">
+                                <option value="Web Scraping & Data Extraction">Web Scraping & Data Extraction</option>
+                                <option value="AI/ML Integration">AI/ML Integration</option>
+                                <option value="Custom Scripting & API Integration">Custom Scripting & API Integration</option>
+                                <option value="Data Pipeline Orchestration">Data Pipeline Orchestration</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="message" class="block text-gray-300 font-semibold mb-2">Your Message</label>
+                        <textarea id="message" name="message" rows="5" required class="w-full p-3 rounded-lg bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-blue-600"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transition-transform duration-300 hover:scale-105">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-center py-8 mt-10 text-gray-400">
+        <div class="container mx-auto px-6">
+            <p>&copy; 2025 Premier Data Migration. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle logic
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Contact form submission logic
+        const contactForm = document.getElementById('contact-form');
+        contactForm.addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent default form submission
+
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const company = document.getElementById('company').value;
+            const service = document.getElementById('service').value;
+            const message = document.getElementById('message').value;
+
+            // Construct the email body
+            const body = `Name: ${name}%0D%0AEmail: ${email}%0D%0ACompany: ${company}%0D%0AService: ${service}%0D%0A%0D%0A${message}`;
+
+            // Create the mailto link
+            const mailtoLink = `mailto:neil.chambers@seismicshift.net?subject=Website Inquiry - ${service}&body=${body}`;
+
+            // Open the user's email client
+            window.location.href = mailtoLink;
+        });
+    </script>
+</body>
+</html>
