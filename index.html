@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seamless Data Migration, Automation, and AI Solutions</title>
+    <title>Premier Data Migration - Seamless Cloud & Database Solutions</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -18,6 +18,34 @@
                 radial-gradient(at 10% 20%, rgb(45, 50, 78) 0%, rgb(18, 22, 45) 100%),
                 radial-gradient(at 90% 80%, rgb(25, 29, 58) 0%, rgb(18, 22, 45) 100%);
         }
+
+        /* Keyframes for the background animation */
+        @keyframes subtle-pulse {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        /* Animated background for sections */
+        .animated-bg {
+            background-size: 200% 200%;
+            animation: subtle-pulse 10s ease-in-out infinite;
+        }
+
+        /* Specific background colors for different sections */
+        .bg-animated-gray-950 {
+            background-image: linear-gradient(90deg, #09090b, #131315, #09090b);
+        }
+
+        .bg-animated-gray-900 {
+            background-image: linear-gradient(90deg, #101014, #18181a, #101014);
+        }
     </style>
 </head>
 <body class="bg-gray-900 text-gray-200">
@@ -25,11 +53,16 @@
     <!-- Header & Navigation -->
     <header class="bg-gray-800 bg-opacity-70 backdrop-blur-md sticky top-0 z-50 shadow-lg">
         <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-            <a href="#" class="text-2xl font-bold text-blue-400">Premier Data Migration</a>
+            <a href="#">
+                <!-- Premier Data Migration Logo -->
+                <img src="https://premierdatamigration.com/pdmlogo.png" 
+                     alt="Premier Data Migration Logo" class="h-8 md:h-12 w-auto">
+            </a>
             <nav class="hidden md:flex space-x-6 text-lg">
                 <a href="#about" class="hover:text-blue-400 transition-colors duration-300">About Us</a>
                 <a href="#services" class="hover:text-blue-400 transition-colors duration-300">Services</a>
-                <a href="#industries" class="hover:text-blue-400 transition-colors duration-300">Industries</a>
+                <a href="#benefits" class="hover:text-blue-400 transition-colors duration-300">Why Us?</a>
+                <a href="#testimonials" class="hover:text-blue-400 transition-colors duration-300">Testimonials</a>
                 <a href="#contact" class="hover:text-blue-400 transition-colors duration-300">Contact</a>
             </nav>
             <button id="mobile-menu-button" class="md:hidden text-gray-200 focus:outline-none">
@@ -42,40 +75,40 @@
         <div id="mobile-menu" class="hidden md:hidden bg-gray-800 bg-opacity-90 backdrop-blur-md">
             <a href="#about" class="block py-4 px-6 text-lg hover:bg-gray-700 transition-colors duration-300">About Us</a>
             <a href="#services" class="block py-4 px-6 text-lg hover:bg-gray-700 transition-colors duration-300">Services</a>
-            <a href="#industries" class="block py-4 px-6 text-lg hover:bg-gray-700 transition-colors duration-300">Industries</a>
-            <a href="#contact" class="block py-4 px-6 text-lg hover:bg-gray-700 transition-colors duration-300">Contact</a>
+            <a href="#benefits" class="block py-4 px-6 text-lg hover:bg-gray-700 transition-colors duration-300">Why Us?</a>
+            <a href="#testimonials" class="block py-4 px-6 text-lg hover:bg-gray-700 transition-colors duration-300">Testimonials</a>
+                <a href="#contact" class="block py-4 px-6 text-lg hover:bg-gray-700 transition-colors duration-300">Contact</a>
         </div>
     </header>
 
     <!-- Hero Section -->
     <section class="hero-bg text-center py-24 md:py-36 min-h-screen flex items-center justify-center">
         <div class="container mx-auto px-6">
-            <!-- Increased hero logo size -->
-            <img src="pdmlogo.png" 
-                 alt="Premier Data Migration Logo" 
-                 class="h-40 md:h-64 w-auto mx-auto mb-8">
             <h1 class="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-4">
                 Seamless <span class="text-blue-400">Data Migration</span> and <span class="text-blue-400">Automation</span> Solutions
             </h1>
             <p class="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto mb-8">
                 Migrate your data with confidence and automate your operations with cutting-edge technology.
             </p>
-            <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transition-transform duration-300 hover:scale-105 inline-block">
+            <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transition-all duration-300 hover:scale-105 animate-pulse inline-block">
                 Get a Free Consultation
             </a>
         </div>
     </section>
 
     <!-- About Us Section -->
-    <section id="about" class="py-20 bg-gray-950">
+    <section id="about" class="py-20 bg-animated-gray-950 animated-bg">
         <div class="container mx-auto px-6">
             <h2 class="text-4xl font-bold text-center text-blue-400 mb-12">About Us</h2>
             <div class="space-y-12 max-w-4xl mx-auto">
-                <div>
-                    <h3 class="text-2xl font-semibold mb-4 text-white">Who We Are</h3>
-                    <p class="text-gray-300 leading-relaxed">
-                        Premier Data Migration is a specialized data solutions company helping businesses modernize, migrate, and manage their data. With over 25 years of experience across industries like oil & gas, healthcare, and banking, we deliver expert data migrations and automation using tools like Ansible Automation Platform or AWX. We’re a team driven by values of Integrity, Excellence, Customer Focus, Security, and Innovation—committed to making data more accessible, secure, and efficient.
-                    </p>
+                <div class="flex flex-col md:flex-row items-center gap-8">
+                    <img src="https://placehold.co/300x200/2563eb/ffffff?text=Boardroom+Meeting" alt="Boardroom Meeting" class="rounded-lg shadow-lg mb-6 md:mb-0 md:w-1/2">
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-4 text-white">Who We Are</h3>
+                        <p class="text-gray-300 leading-relaxed">
+                            Premier Data Migration is a specialized data solutions company helping businesses modernize, migrate, and manage their data. With over 25 years of experience across industries like oil & gas, healthcare, and banking, we deliver expert data migrations and automation using tools like Ansible Automation Platform or AWX. We’re a team driven by values of Integrity, Excellence, Customer Focus, Security, and Innovation—committed to making data more accessible, secure, and efficient.
+                        </p>
+                    </div>
                 </div>
                 <div>
                     <h3 class="text-2xl font-semibold mb-4 text-white">Our Mission</h3>
@@ -104,7 +137,7 @@
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="py-20 bg-gray-900">
+    <section id="services" class="py-20 bg-animated-gray-900 animated-bg">
         <div class="container mx-auto px-6">
             <h2 class="text-4xl font-bold text-center text-blue-400 mb-12">Our Services</h2>
             <p class="text-lg text-gray-300 text-center max-w-3xl mx-auto mb-12">
@@ -113,6 +146,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10">
                 <!-- Data Migration & Modernization Card -->
                 <div class="bg-gray-800 p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-shadow duration-300">
+                    <img src="https://placehold.co/100x100/2563eb/ffffff?text=Migrate" alt="Data Migration" class="mb-4 mx-auto md:mx-0">
                     <h3 class="text-2xl font-semibold text-white mb-4">1. Data Migration & Modernization</h3>
                     <ul class="space-y-4 text-gray-300">
                         <li><span class="font-semibold text-blue-400">Legacy Data Migration:</span> Move data from tape archives, UNIX systems, and on-prem storage arrays into secure, scalable cloud storage (AWS, Azure, Google Cloud).</li>
@@ -123,6 +157,7 @@
                 </div>
                 <!-- IT Automation & DevOps Card -->
                 <div class="bg-gray-800 p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-shadow duration-300">
+                    <img src="https://placehold.co/100x100/2563eb/ffffff?text=Automate" alt="IT Automation" class="mb-4 mx-auto md:mx-0">
                     <h3 class="text-2xl font-semibold text-white mb-4">2. IT Automation & DevOps</h3>
                     <ul class="space-y-4 text-gray-300">
                         <li><span class="font-semibold text-blue-400">Ansible Automation:</span> Our primary focus is leveraging Ansible Automation Platform to standardize deployments, manage configurations, and automate tasks across your entire infrastructure, both on-prem and in the cloud.</li>
@@ -133,6 +168,7 @@
                 </div>
                 <!-- Cloud & Systems Consulting Card -->
                 <div class="bg-gray-800 p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-shadow duration-300">
+                    <img src="https://placehold.co/100x100/2563eb/ffffff?text=Cloud" alt="Cloud Consulting" class="mb-4 mx-auto md:mx-0">
                     <h3 class="text-2xl font-semibold text-white mb-4">3. Cloud & Systems Consulting</h3>
                     <ul class="space-y-4 text-gray-300">
                         <li><span class="font-semibold text-blue-400">Cloud Strategy & Architecture:</span> Design secure, scalable cloud environments (AWS, Azure, GCP, OCI) tailored to your business needs.</li>
@@ -142,6 +178,7 @@
                 </div>
                 <!-- Custom Development & Tooling Card -->
                 <div class="bg-gray-800 p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-shadow duration-300">
+                    <img src="https://placehold.co/100x100/2563eb/ffffff?text=AI" alt="AI and Tech" class="mb-4 mx-auto md:mx-0">
                     <h3 class="text-2xl font-semibold text-white mb-4">4. AI & Emerging Tech Integration</h3>
                     <ul class="space-y-4 text-gray-300">
                         <li><span class="font-semibold text-blue-400">Web Scraping & Data Extraction:</span> Extract, process, and structure data from public websites and digital sources, delivering it in a clean, usable format for your business needs.</li>
@@ -153,24 +190,74 @@
             </div>
         </div>
     </section>
-    
+
+    <!-- Why Choose Us? Section -->
+    <section id="benefits" class="py-20 bg-animated-gray-950 animated-bg">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center text-blue-400 mb-12">Why Choose Us?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10 text-center">
+                <!-- Icon 1 -->
+                <div class="flex flex-col items-center">
+                    <img src="https://placehold.co/100x100/2563eb/ffffff?text=Efficient" alt="Efficiency Icon" class="rounded-full mb-4">
+                    <h3 class="text-2xl font-semibold text-white mb-2">Efficiency</h3>
+                    <p class="text-gray-400">Our automated processes save you time and money, ensuring faster project completion.</p>
+                </div>
+                <!-- Icon 2 -->
+                <div class="flex flex-col items-center">
+                    <img src="https://placehold.co/100x100/2563eb/ffffff?text=Secure" alt="Security Icon" class="rounded-full mb-4">
+                    <h3 class="text-2xl font-semibold text-white mb-2">Security</h3>
+                    <p class="text-gray-400">We prioritize your data's integrity with advanced security protocols and robust validation.</p>
+                </div>
+                <!-- Icon 3 -->
+                <div class="flex flex-col items-center">
+                    <img src="https://placehold.co/100x100/2563eb/ffffff?text=Reliable" alt="Reliability Icon" class="rounded-full mb-4">
+                    <h3 class="text-2xl font-semibold text-white mb-2">Reliability</h3>
+                    <p class="text-gray-400">Our team and technology ensure a smooth, error-free transition for all your data.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Industries Section -->
-    <section id="industries" class="py-20 bg-gray-950">
+    <section id="industries" class="py-20 bg-animated-gray-900 animated-bg">
         <div class="container mx-auto px-6">
             <h2 class="text-4xl font-bold text-center text-blue-400 mb-12">Industries We Serve</h2>
-            <p class="text-lg text-gray-300 text-center max-w-3xl mx-auto mb-12">
-                We work across multiple industries, including **healthcare**, **finance**, **manufacturing**, and more, helping organizations modernize their systems and unlock the value of their data.
-            </p>
+            <div class="flex flex-col items-center">
+                <img src="https://placehold.co/300x200/2563eb/ffffff?text=Diverse+Industries" alt="Industries We Serve" class="rounded-lg shadow-lg mb-6">
+                <p class="text-lg text-gray-300 text-center max-w-3xl mx-auto mb-12">
+                    We work across multiple industries, including **healthcare**, **finance**, **manufacturing**, and more, helping organizations modernize their systems and unlock the value of their data.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-animated-gray-950 animated-bg">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center text-blue-400 mb-12">What Our Clients Say</h2>
+            <div class="max-w-3xl mx-auto bg-gray-800 p-8 rounded-2xl shadow-xl border-t-4 border-blue-600">
+                <div class="flex items-center mb-6">
+                    <img src="https://placehold.co/60x60/2563eb/ffffff?text=Client" alt="Client Profile" class="rounded-full mr-4">
+                    <p class="text-xl md:text-2xl italic text-gray-300">
+                        "Premier Data Migration handled our complex ERP migration flawlessly. Their team was professional, efficient, and they delivered exactly on time. I can't recommend them enough."
+                    </p>
+                </div>
+                <div class="text-right">
+                    <p class="text-white font-semibold">- Marc Pestien</p>
+                    <p class="text-gray-400">CTO, Tech Solutions Inc.</p>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Key Benefits Section -->
-    <section class="py-20 bg-gray-900">
+    <section class="py-20 bg-animated-gray-900 animated-bg">
         <div class="container mx-auto px-6">
             <h2 class="text-4xl font-bold text-center text-blue-400 mb-12">Key Benefits</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Benefit Card 1 -->
                 <div class="bg-gray-800 p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-shadow duration-300">
+                    <img src="https://placehold.co/100x100/2563eb/ffffff?text=Speed" alt="Speed Icon" class="rounded-lg mb-4">
                     <h3 class="text-2xl font-semibold text-white mb-4">1. Faster Time-to-Value</h3>
                     <p class="text-gray-300 leading-relaxed">
                         Automated migrations and deployments streamline projects, helping you achieve results faster and with less complexity.
@@ -178,6 +265,7 @@
                 </div>
                 <!-- Benefit Card 2 -->
                 <div class="bg-gray-800 p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-shadow duration-300">
+                    <img src="https://placehold.co/100x100/2563eb/ffffff?text=Cost" alt="Cost Icon" class="rounded-lg mb-4">
                     <h3 class="text-2xl font-semibold text-white mb-4">2. Reduced Costs</h3>
                     <p class="text-gray-300 leading-relaxed">
                         Eliminate expensive legacy infrastructure and cut manual IT overhead with automation and cloud optimization.
@@ -185,6 +273,7 @@
                 </div>
                 <!-- Benefit Card 3 -->
                 <div class="bg-gray-800 p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-shadow duration-300">
+                    <img src="https://placehold.co/100x100/2563eb/ffffff?text=Secure" alt="Security Icon" class="rounded-lg mb-4">
                     <h3 class="text-2xl font-semibold text-white mb-4">3. Improved Reliability</h3>
                     <p class="text-gray-300 leading-relaxed">
                         Automated pipelines, backups, and monitoring ensure consistent performance and fewer outages.
@@ -192,6 +281,7 @@
                 </div>
                 <!-- Benefit Card 4 -->
                 <div class="bg-gray-800 p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-shadow duration-300">
+                    <img src="https://placehold.co/100x100/2563eb/ffffff?text=Future" alt="Future Proof" class="rounded-lg mb-4">
                     <h3 class="text-2xl font-semibold text-white mb-4">4. Future-Proof Systems</h3>
                     <p class="text-gray-300 leading-relaxed">
                         By modernizing legacy platforms and adopting cloud-native solutions, your business is ready to scale and adapt.
@@ -199,6 +289,7 @@
                 </div>
                 <!-- Benefit Card 5 -->
                 <div class="bg-gray-800 p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-shadow duration-300">
+                    <img src="https://placehold.co/100x100/2563eb/ffffff?text=Custom" alt="Custom Solutions" class="rounded-lg mb-4">
                     <h3 class="text-2xl font-semibold text-white mb-4">5. Customized Solutions</h3>
                     <p class="text-gray-300 leading-relaxed">
                         We don’t just deliver one-size-fits-all services — we build tailored integrations, pipelines, and automation designed for your unique needs.
@@ -209,12 +300,11 @@
     </section>
 
     <!-- Contact Form Section -->
-    <section id="contact" class="py-20 bg-gray-950">
+    <section id="contact" class="py-20 bg-animated-gray-950 animated-bg">
         <div class="container mx-auto px-6">
             <h2 class="text-4xl font-bold text-center text-blue-400 mb-12">Contact Us</h2>
             <div class="max-w-xl mx-auto bg-gray-800 p-8 rounded-2xl shadow-xl">
-                <form action="https://formsubmit.co/995bfbe74def0a0910f77355851ceaa1" method="POST" class="space-y-6">
-                    <input type="hidden" name="_subject" value="New Submission from PremierDataMigration Website">
+                <form id="contact-form" class="space-y-6">
                     <div>
                         <label for="name" class="block text-gray-300 font-semibold mb-2">Your Name</label>
                         <input type="text" id="name" name="name" required class="w-full p-3 rounded-lg bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-blue-600">
@@ -290,6 +380,27 @@
             link.addEventListener('click', () => {
                 mobileMenu.classList.add('hidden');
             });
+        });
+
+        // Contact form submission logic
+        const contactForm = document.getElementById('contact-form');
+        contactForm.addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent default form submission
+
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const company = document.getElementById('company').value;
+            const service = document.getElementById('service').value;
+            const message = document.getElementById('message').value;
+
+            // Construct the email body
+            const body = `Name: ${name}%0D%0AEmail: ${email}%0D%0ACompany: ${company}%0D%0AService: ${service}%0D%0A%0D%0A${message}`;
+
+            // Create the mailto link
+            const mailtoLink = `mailto:neil.chambers@seismicshift.net?subject=Website Inquiry - ${service}&body=${body}`;
+
+            // Open the user's email client
+            window.location.href = mailtoLink;
         });
     </script>
 </body>
