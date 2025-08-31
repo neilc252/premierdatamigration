@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Premier Data Migration - Seamless Cloud & Database Solutions</title>
+    <title>Seamless Data Migration, Automation, and AI Solutions</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -26,9 +26,9 @@
     <header class="bg-gray-800 bg-opacity-70 backdrop-blur-md sticky top-0 z-50 shadow-lg">
         <div class="container mx-auto px-4 py-4 flex justify-between items-center">
             <a href="#">
-                <!-- Increased the header logo size -->
+                <!-- Increased header logo size -->
                 <img src="pdmlogo.png" 
-                     alt="Premier Data Migration" class="h-12 md:h-16 w-auto">
+                     alt="Premier Data Migration Logo" class="h-16 md:h-20 w-auto">
             </a>
             <nav class="hidden md:flex space-x-6 text-lg">
                 <a href="#about" class="hover:text-blue-400 transition-colors duration-300">About Us</a>
@@ -54,12 +54,12 @@
     <!-- Hero Section -->
     <section class="hero-bg text-center py-24 md:py-36 min-h-screen flex items-center justify-center">
         <div class="container mx-auto px-6">
-            <!-- Added a large, centered logo to the hero section -->
+            <!-- Increased hero logo size -->
             <img src="pdmlogo.png" 
-                 alt="Premier Data Migration" 
-                 class="h-20 md:h-32 w-auto mx-auto mb-6">
+                 alt="Premier Data Migration Logo" 
+                 class="h-28 md:h-40 w-auto mx-auto mb-8">
             <h1 class="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-4">
-                Seamless <span class="text-blue-400">Data Migration</span> , <span class="text-blue-400">Automation and AI</span> Solutions
+                Seamless <span class="text-blue-400">Data Migration</span> and <span class="text-blue-400">Automation</span> Solutions
             </h1>
             <p class="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto mb-8">
                 Migrate your data with confidence and automate your operations with cutting-edge technology.
@@ -217,7 +217,8 @@
         <div class="container mx-auto px-6">
             <h2 class="text-4xl font-bold text-center text-blue-400 mb-12">Contact Us</h2>
             <div class="max-w-xl mx-auto bg-gray-800 p-8 rounded-2xl shadow-xl">
-                <form id="contact-form" class="space-y-6">
+                <form action="https://formsubmit.co/neil.chambers@seismicshift.net" method="POST" class="space-y-6">
+                    <input type="hidden" name="_subject" value="New Submission from PremierDataMigration Website">
                     <div>
                         <label for="name" class="block text-gray-300 font-semibold mb-2">Your Name</label>
                         <input type="text" id="name" name="name" required class="w-full p-3 rounded-lg bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-blue-600">
@@ -293,27 +294,6 @@
             link.addEventListener('click', () => {
                 mobileMenu.classList.add('hidden');
             });
-        });
-
-        // Contact form submission logic
-        const contactForm = document.getElementById('contact-form');
-        contactForm.addEventListener('submit', function(event) {
-            event.preventDefault(); // Prevent default form submission
-
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const company = document.getElementById('company').value;
-            const service = document.getElementById('service').value;
-            const message = document.getElementById('message').value;
-
-            // Construct the email body
-            const body = `Name: ${name}%0D%0AEmail: ${email}%0D%0ACompany: ${company}%0D%0AService: ${service}%0D%0A%0D%0A${message}`;
-
-            // Create the mailto link
-            const mailtoLink = `mailto:neil.chambers@seismicshift.net?subject=Website Inquiry - ${service}&body=${body}`;
-
-            // Open the user's email client
-            window.location.href = mailtoLink;
         });
     </script>
 </body>
