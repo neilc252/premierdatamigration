@@ -20,7 +20,7 @@ const Footer = () => {
             About Us
           </Typography>
           <Typography variant="body2">
-            We specialize in transforming seismic data management systems with innovative and secure solutions.
+            We specialize in transforming Data Management Systems with innovative and secure solutions.
           </Typography>
         </Grid>
 
@@ -69,7 +69,7 @@ const Footer = () => {
       {/* Copyright Section */}
       <Box sx={{ textAlign: "center", mt: 4 }}>
         <Typography variant="body2">
-          © {new Date().getFullYear()} Seismic Shift. All rights reserved.
+          © {new Date().getFullYear()} Premier Data Migration. All rights reserved.
         </Typography>
       </Box>
     </Box>
