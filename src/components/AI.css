@@ -1,0 +1,116 @@
+.ai-page-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+.ai-page-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+h1 {
+  font-size: 2.8rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #34495e;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.intro-text {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #555;
+}
+
+.why-ai-section {
+  margin-bottom: 3rem;
+}
+
+.ai-benefits-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.ai-benefits-list li {
+  background: #f4f6f9;
+  border-left: 4px solid #3498db;
+  padding: 1.5rem;
+  border-radius: 8px;
+  flex: 1 1 calc(50% - 1.5rem);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.ai-benefits-list li strong {
+  color: #2980b9;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.service-card {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.12);
+}
+
+.service-card h3 {
+  color: #16a085;
+  margin-top: 0;
+  font-size: 1.5rem;
+}
+
+.cta-section {
+  text-align: center;
+  background: #e9f5ff;
+  padding: 3rem;
+  border-radius: 10px;
+  margin-top: 4rem;
+}
+
+.contact-button {
+  background: #2ecc71;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 1.5rem;
+}
+
+.contact-button:hover {
+  background: #27ae60;
+}
+
+@media (max-width: 768px) {
+  .ai-benefits-list li {
+    flex: 1 1 100%;
+  }
+}
